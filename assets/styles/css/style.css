@@ -164,7 +164,7 @@ body {
 
 /* Start Hero */
 .landing {
-  background-image: url(/resources/img/mountain-bg.jpg);
+  background-image: url(../../resources/img/mountain-bg.jpg);
   background-size: cover;
   height: calc(100vh - 40px);
   position: relative;
