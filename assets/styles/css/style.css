@@ -488,6 +488,10 @@ hr {
   font-size: 1rem;
 }
 
+.footer > sup {
+  vertical-align: super
+}
+
 .footer span {
   font-weight: bold;
   color: var(--color-primary);
@@ -495,3 +499,17 @@ hr {
 }
 
 /* End Footer */
+
+/* Start Back To Top Button */
+.back-to-top {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  z-index: 30;
+  transition: all 1s
+}
+
+/* End Back To Top Button */
