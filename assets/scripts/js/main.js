@@ -1,20 +1,18 @@
-// --Back to top
-// Selectors
-const rootE = document.documentElement;
-const toTopBtn = document.getElementById("toTopBtn");
+// --Back to top button
+let backToTopBtn = document.getElementById("toTopBtn");
 
-// Function
-const scrollToTop = () => {
-    rootE.scrollTo({
-        top: 0,
-    })
-}
+// *Show button on scroll away from top
+document.addEventListener("scroll", () => {
+    if (document.documentElement.scrollTop > 300) {
+        backToTopBtn.classList.add("btn-show");
+    } else {
+        backToTopBtn.classList.remove("btn-show");
+    }
+});
 
-// Event Listener
-toTopBtn.addEventListener("click", scrollToTop);
+// *scroll to the top of the document upon click
+const toTop = () => {
+    document.documentElement.scrollIntoView();
+};
 
-// --Hide Back to top
-window.addEventListener("scroll", e => {
-    toTopBtn.style.display = window.scrollY > 10 ? 'block' : 'none'; //Hide the btn
-    toTopBtn.style.opacity = window.scrollY > 400 ? '1' : '0'; //Fade the btn in and out
-})
+// --Open navigation menu
