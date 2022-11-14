@@ -10,8 +10,6 @@
 
 /* Start Global Rules */
 * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -509,7 +507,14 @@ hr {
   height: 2rem;
   cursor: pointer;
   z-index: 30;
-  transition: all 1s
+  transition: all 1s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.btn-show {
+  opacity: 1;
+  visibility: visible;
 }
 
 /* End Back To Top Button */
