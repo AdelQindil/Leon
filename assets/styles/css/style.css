@@ -95,13 +95,6 @@ body {
   position: relative;
 }
 
-/* TODO Improve hamburger menu animation */
-/* ? On click and pure CSS */
-/* ! Use Javascript later for learning */
-.menu-links:hover span:nth-child(2) {
-  width: 100%;
-}
-
 .menu-icon {
   width: 30px;
   display: flex;
@@ -136,13 +129,12 @@ body {
   right: 0;
   min-width: 200px;
   top: calc(100% + 20px);
-  display: none;
   z-index: 1;
+  transition: all 0.3s;
+  opacity: 0;
+  visibility: hidden;
 }
 
-.menu-links:hover ul {
-  display: block;
-}
 
 .menu-links ul::before {
   content: "";
